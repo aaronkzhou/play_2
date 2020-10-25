@@ -1,25 +1,29 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Router } from '@reach/router';
+import { Store } from './helper/store'
 import Home from './components/home'
 import Details from './components/details'
 import NotFound from './components/404'
+import { fetchPostsAction } from "./helper/actions";
 import './App.css';
 
 function App() {
-  // useEffect(() => {
-  //   fetch('https://jsonplaceholder.typicode.com/posts')
-  //     .then(response => response.json())
-  //     .then(json => console.log(json))
-  // })
+  const { state, dispatch } = React.useContext(Store);
+
+  useEffect(() => {
+    state?.posts?.length === 0 && fetchPostsAction(dispatch);
+  }, []);
 
   return (
     <div className="App">
       <header className="App-header">
-        <Router>
-          <Home exact path="/" />
-          <Details exact path="/posts/:id" />
-          <NotFound default />
-        </Router>
+        <div className="app-wrapper">
+          <Router>
+            <Home exact path="/" />
+            <Details exact path="/posts/:id" />
+            <NotFound default />
+          </Router>
+        </div>
       </header>
     </div>
   );
