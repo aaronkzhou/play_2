@@ -5,8 +5,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Home page
 ![home page](images/home.png)
 
+- display few posts at very beginning
+- click load more to list all the posts
+- each post is clickable which link to detail page
+
 ### Landing page
 ![landing page](images/landing.png)
+
+- display title and content
+- list all the comment link to the specific page
+- able to add and delete the comment
+- able to back to home by clicking home at the top
 
 ## Available Scripts
 
