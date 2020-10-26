@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Link } from "@reach/router";
 
 const PostList = ({ posts }) => {
@@ -21,13 +22,17 @@ const PostList = ({ posts }) => {
           );
         })}
       </ul>
-      {!isLoadingMore && (
+      {!isLoadingMore && posts.length > 6 && (
         <button className='button' onClick={onClick}>
           Load More...
         </button>
       )}
     </>
   );
+};
+
+PostList.propTypes = {
+  posts: PropTypes.array.isRequired,
 };
 
 export default PostList;

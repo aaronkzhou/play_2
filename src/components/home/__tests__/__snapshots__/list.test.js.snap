@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PostList should render properly with feeding data with a bit more data 1`] = `
+Array [
+  <ul
+    className="list-container"
+  >
+    <li
+      className="list-wrapper"
+    >
+      <a
+        href="/posts/1"
+        onClick={[Function]}
+      >
+        <div
+          className="overview-wrapper"
+        >
+          title
+        </div>
+      </a>
+    </li>
+    <li
+      className="list-wrapper"
+    >
+      <a
+        href="/posts/2"
+        onClick={[Function]}
+      >
+        <div
+          className="overview-wrapper"
+        >
+          title
+        </div>
+      </a>
+    </li>
+    <li
+      className="list-wrapper"
+    >
+      <a
+        href="/posts/3"
+        onClick={[Function]}
+      >
+        <div
+          className="overview-wrapper"
+        >
+          title
+        </div>
+      </a>
+    </li>
+    <li
+      className="list-wrapper"
+    >
+      <a
+        href="/posts/4"
+        onClick={[Function]}
+      >
+        <div
+          className="overview-wrapper"
+        >
+          title
+        </div>
+      </a>
+    </li>
+    <li
+      className="list-wrapper"
+    >
+      <a
+        href="/posts/5"
+        onClick={[Function]}
+      >
+        <div
+          className="overview-wrapper"
+        >
+          title
+        </div>
+      </a>
+    </li>
+    <li
+      className="list-wrapper"
+    >
+      <a
+        href="/posts/6"
+        onClick={[Function]}
+      >
+        <div
+          className="overview-wrapper"
+        >
+          title
+        </div>
+      </a>
+    </li>
+  </ul>,
+  <button
+    className="button"
+    onClick={[Function]}
+  >
+    Load More...
+  </button>,
+]
+`;
+
+exports[`PostList should render properly with feeding data with small amount data 1`] = `
+<ul
+  className="list-container"
+>
+  <li
+    className="list-wrapper"
+  >
+    <a
+      href="/posts/1"
+      onClick={[Function]}
+    >
+      <div
+        className="overview-wrapper"
+      >
+        title
+      </div>
+    </a>
+  </li>
+</ul>
+`;
