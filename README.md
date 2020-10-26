@@ -1,8 +1,15 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Pending to improve
+
+- more tests
+- e2e tests
+- better ui alignment
+
 ## Ui overview
 
 ### Home page
+
 ![home page](images/home.png)
 
 - display few posts at very beginning
@@ -10,6 +17,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - each post is clickable which link to detail page
 
 ### Landing page
+
 ![landing page](images/landing.png)
 
 - display title and content
